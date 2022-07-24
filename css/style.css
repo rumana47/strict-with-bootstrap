@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f9f9f9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    text-align: center;
+    position: relative;
+}
+.banner h1{
+    
+color: #fff;
+    
+font-size: 80px;
+    
+text-transform: uppercase;
+}
+.banner span{
+    
+height: 1px;
+    
+width: 80%;
+    
+background: #15a4fa;
+    
+display: block;
+    
+margin: auto;
+    
+margin-bottom: 20px;
+}
+.banner p{
+    
+color: #fff;
+}
+.btn-custom{
+    
+color: #fff;
+    
+border: 1px solid #15a4fa;
+    
+padding: 10px 22px;
+}
+.btn-custom:hover{
+    background-color: #15a4fa;
+}
+.height{
+    min-height: 90vh;
+    align-items: center;
+}
+.icon{
+color: #fff;
+    
+position: absolute;
+    
+left: 50%;
+    
+bottom: 18%;
+transform: translateX(-50%);
+    
+font-size: 25px;
+animation: updown 2s linear infinite alternate;
+
+}
+@keyframes updown{
+    0%{
+        bottom: 20%;
+    }
+    100%{
+        bottom: 10%;
+        color: #15a4fa;
+    }
+}
+.simple_section{
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.simple_section h2{ 
+    margin-bottom: 20px;
+    color: #2d3950;
+}
+.simple_section p{
+    color: #999999;
+}
+.features_section{
+
+}
+.feature_icon{
+height: 80px;
+
+width: 80px;
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+color: #fff;
+
+font-size: 40px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: auto;
+
+margin-bottom: 20px;
+}
+.features_section h3{
+
+color: #2d3950;
+
+margin-bottom: 20px;
+
+font-size: 25px;
+
+font-weight: 400;
+}
+.features_section p{
+
+color: #999999;
+
+font-size: 14px;
+}
+.gallery{
+ background-color: #f9f9f9;    
+}
+.gallery h2{
+    
+color: #2d3950;
+    
+margin-bottom: 20px;
+    
+font-size: 35px;
+    
+font-weight: 400;
+}
+.gallery p{
+    
+color: #999999;
+margin-bottom: 40px;
+    
+font-size: 14px;
+}
+.gallery_item{
+    position: relative;
+
+}
+
+.gallery_item::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height:0%;
+    background-color: #15a4fa;
+    opacity: .5;
+    transition: .6s all ease-in-out;
+}
+
+.gallery_item::before {
+    content: '';
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width:0%;
+    height: 0%;
+    background-color: #043a5e;
+    opacity: .5;
+    transition: .6s all ease-in-out;
+}
+
+.gallery_item:hover::after {
+    height: 100%;
+    width: 50%;
+}
+
+.gallery_item:hover::before {
+    height: 100%;
+    width: 50%;
+}
+.gallery_icon{
+
+position: absolute;
+
+left: 50%;
+
+top: 50%;
+
+transform: translate(-50%,-50%);
+
+
+z-index: 999;
+}
+.gallery_icon ul{
+    
+list-style: none;
+    
+margin: 0;
+    
+padding: 0;
+    
+display: flex;
+}
+.gallery_icon ul li{
+    
+margin: 5px;
+    
+border: 1px solid #fff;
+    
+height: 35px;
+    
+width: 35px;
+    
+
+border-radius: 3px;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+}
+
+.gallery_icon ul li a {
+    
+color: #fff;
+}
+.contact_section{
+    background-image: url(../images/bacground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: .5;
+    z-index: -1;
+}
+.contact_section{
+
+}
+.contact_section h2{
+    
+color: #fff;
+    
+margin-top: 30px;
+    
+font-weight: 400;
+}
+.contact_section p{
+    
+color: #999999;
+    
+margin-bottom: 20px;
+}
+.contact_section form input{
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+   color: #84868a;
+   border: 1px solid #84868a;
+    
+}
+.contact_section form textarea{
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    color: #84868a;
+
+    
+}
+.contact_section form input:focus {
+    background: transparent;
+    box-shadow: none;
+    color: #84868a;
+    border: 1px solid #84868a;
+}
+
+.contact_section textarea:focus {
+    background: transparent;
+    box-shadow: none;
+    color: #84868a;
+    border: 1px solid #84868a;
+}
+.send_form{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+
+}
+.checkbox p{
+    margin: 0 0 0 6px;
+}
+.contact_section form input[type="submit"]{
+
+    border: 1px solid rgb(21, 164, 250);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition:  0.5s all ease-in-out 0s;
+    padding: 9px 40px;
+  
+}
+.contact_section form input[type="submit"]:hover{
+   background-color: #15a4fa;
+}
+.footer_part{
+    background-color: #f6f9f9;
+}
+
+.footer_content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer_content p {
+    margin: 0;
+    color: #999999;
+    font-size: 12px;
+}
+
+.social_midea ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.social_midea ul li {
+
+    margin-left: 8px;
+    border: 1px solid rgb(21 164 250);
+    background-color: rgb(21 164 250);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.social_midea ul li a {
+
+    text-decoration: none;
+    color: #ffff;
+}
+
+
